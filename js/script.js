@@ -1,3 +1,60 @@
+//задача из урока exercise 14
+const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+
+function sortStudentsByGroups(arr) {
+    
+}
+
+
+
+
+
+
+
+
+//задача из урока exercise 13 
+// const shoppingMallData = {
+//     shops: [
+//         {
+//             width: 10,
+//             length: 5
+//         },
+//         {
+//             width: 15,
+//             length: 7
+//         },
+//         {
+//             width: 20,
+//             length: 5
+//         },
+//         {
+//             width: 10,
+//             length: 8
+//         }
+//     ],
+//     height: 5,
+//     moneyPer1m3: 30,
+//     budget: 50000
+// }
+// function isBudgetEnough(data) {
+//     let shopsRaz = 0,
+//         shopsBud = 0;
+//     data.shops.forEach(item => {
+//         let i = (item.width * item.length) * data.height;
+//         shopsRaz = shopsRaz + i;
+//     });
+//     shopsBud = shopsRaz * data.moneyPer1m3;
+//     console.log(shopsBud)
+//     if (data.budget <= shopsBud) {
+//         return 'Бюджета недостаточно'
+//     } else {
+//         return 'Бюджета достаточно'
+//     }
+// }
+// console.log(isBudgetEnough(shoppingMallData));
+
+
+
 // const objs = {
 //     name: 'tiny',
 //     size: 'medd',
@@ -121,14 +178,3 @@
 //     return res
 // }
 // console.log(availableCurr(additionalCurrencies, 'USD'))
-
-
-
-
-
-
-
-
-
-
-
