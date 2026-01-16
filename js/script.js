@@ -1,14 +1,29 @@
 //задача из урока exercise 14
-const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
-
-function sortStudentsByGroups(arr) {
-    
-}
-
-
-
-
-
+// const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi'];
+// function sortStudentsByGroups(arr) {
+//     let newMass = arr.sort();
+//     let res = [[],[],[],"Оставшиеся студенты:"];
+//     for (let i = 0; i < newMass.length; i++) {
+//         if (i < 3) {
+//             res[0].push(newMass[i]);
+//         } else if (i < 6) {
+//             res[1].push(newMass[i]);
+//         } else if (i < 9) {
+//             res[2].push(newMass[i]);
+//         } else {
+//             if (res[3] === "Оставшиеся студенты:") {
+//                 res[3] += " " + newMass[i];
+//             } else {
+//                 res[3] += ", " + newMass[i];
+//             }
+//         }
+//     }
+//     if (res[3] === "Оставшиеся студенты:") {
+//         res[3] += " -";
+//     }
+//     return res;
+// }
+// console.log(sortStudentsByGroups(students));
 
 
 
