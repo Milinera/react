@@ -1,3 +1,15 @@
+// замыкание функции
+// let i = 0;
+// const sup = function() {
+//     i = i + 1
+//     return i
+// }
+// const sup2 = sup()
+// const sup3 = sup()
+// const sup4 = sup()
+// console.log(sup2, sup3, sup4)
+
+
 //задача из урока exercise 14
 // const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi'];
 // function sortStudentsByGroups(arr) {
