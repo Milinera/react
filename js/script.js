@@ -1,3 +1,16 @@
+//диструктуризация 
+// const obj1 = {
+//     name: 'micha',
+//     color: {
+//         black: '#111',
+//         white: '#fff'
+//     }
+// }
+
+// let {color: {black: newColor}} = obj1;
+// console.log(newColor)
+
+
 // замыкание функции
 // let i = 0;
 // const sup = function() {
