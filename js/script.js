@@ -1,3 +1,6 @@
+//добавление стилей
+// const box = document.querySelector('.box');
+// box.style.cssText = 'width: 50px; height: 50px; background: black;'
 //задача из урока exercise 14
 // const restorantData = {
 //     menu: [
