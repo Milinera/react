@@ -1,3 +1,24 @@
+//создание элементов
+const div = document.createElement('div'),
+      box = document.querySelector('.box'),
+      cols = document.querySelectorAll('.col');
+
+
+div.classList.add('blac');
+
+box.append(div); //в конец блока
+box.prepend(div); // в начало
+cols[2].remove(); //удаляем третий элемент
+cols[3].before(div); //вставляет после или after для перед элементом
+cols[0].replaceWith(cols[1]); //заменить cols0 на cols1
+
+div.innerHTML = '<h2>hello</h2>';  //добавляем код в блок
+cols[3].textContent = '<h3>hello</h3>'; //только текст для безопасности от пользобвателей 
+
+div.insertAdjacentHTML('afterbegin', '<p>ddd</p>'); //вставить что-то перед, после, до или в элемент
+
+
+
 //добавление стилей
 // const box = document.querySelector('.box');
 // box.style.cssText = 'width: 50px; height: 50px; background: black;'
