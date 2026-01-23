@@ -1,3 +1,20 @@
+//Exercise 16
+// function factorial(x) {
+//     if (typeof(x) !== 'number' || !Number.isInteger(x)) {   //Number.isInteger(x) - проверка на целое число
+//         return 'NaN'
+//     } else if (x <= 1){
+//         return 1
+//     } else {
+//         if (x === 2) {
+//             return x
+//         } else {
+//             return x * factorial(x - 1);
+//         }
+//     }
+// }
+// console.log(factorial(2))
+
+
 //рекурсия
 // function pow (x, n) {
 //     let res = 1;
@@ -23,7 +40,7 @@
 // for(let corse of Object.values(main)) {
 //     //все итемы обьекта в массив
 // }
-
+// Array.isArray() //проверка на массив
 
 
 //передвижение по DOM
