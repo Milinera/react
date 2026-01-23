@@ -1,3 +1,31 @@
+//рекурсия
+// function pow (x, n) {
+//     let res = 1;
+//     for (let i = 0; i < n; i++) {
+//         res *= x;
+//     }
+//     return res;
+// }
+// function pow (x, n) {
+//     if (n === 1) {
+//         return x
+//     } else {
+//         return x * pow(x, n - 1);
+//     }
+// }
+// console.log(pow(2, 3))
+// let main = {
+//     num: 100,
+//     low: {
+//         num: 200
+//     }
+// }
+// for(let corse of Object.values(main)) {
+//     //все итемы обьекта в массив
+// }
+
+
+
 //передвижение по DOM
 // console.log(document.body.childNodes) //хранилище внутри блока body, lastchild firstchild
 // const box = document.querySelector('.box'),
