@@ -1,3 +1,10 @@
+//события на мобилке
+//touchstart touchend touchmove
+//anync/defer
+
+
+
+
 //Exercise 16
 // function factorial(x) {
 //     if (typeof(x) !== 'number' || !Number.isInteger(x)) {   //Number.isInteger(x) - проверка на целое число
