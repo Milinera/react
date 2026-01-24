@@ -1,6 +1,17 @@
+//интерполяция
+// || или для выбора между
+// let user;
+// console.log(user ?? 'User')  //нулишь оператор не учитывает 0
+
+
 //события на мобилке
 //touchstart touchend touchmove
 //anync/defer
+
+
+// let named;
+// console.log(named?.dd) // ? проверяет есть ли что-то слево, если нет то undefind
+// d.ddd?(); // проверка функции которой нет
 
 
 
