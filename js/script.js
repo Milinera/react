@@ -1,3 +1,27 @@
+// //map - карты
+// shops = [
+//     {one: 1},
+//     {one: 2},
+//     {two: 3}
+// ]
+
+// const map = new Map([
+//     [{paper: 5000}, 4000]
+// ]);
+// map.set(shops[0], 5000);
+// map.set(shops[1], 6000); //добавление ключей в виде обьекта
+// map.set(shops[2], 7000);
+// console.log(map);
+// // console.log(map.get(shops[1]));   //получение данных
+// // console.log(map.has(shops[1]));   //проверка наличия true/false
+// // map.delete(key);
+// // map.clear();
+// // map.size();
+// // map.keys();
+
+
+
+
 //интерполяция
 // || или для выбора между
 // let user;
