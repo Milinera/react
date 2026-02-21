@@ -1,3 +1,68 @@
+// // //упражнение 18 и как убирать определенные символы 
+// function isPangram(string) {
+//     let lower = string.toLowerCase(),
+//         mass = new Array(...lower),
+//         set = new Set(mass);
+
+//     if (set.size < 26) {
+//         return false
+//     } else {
+//         return true
+//     }
+
+// }
+
+// console.log(isPangram('The quick brown fox jumps over the lazy dog'))
+
+
+// // Синтаксис: строка.replace(/[^нужныеСимволы]/g, '')
+// // ^ внутри квадратных скобок означает "все КРОМЕ"
+// let text = "Hello! How are you? 123.";
+// // Оставить только буквы (a-z, A-Z)
+// let onlyLetters = text.replace(/[^a-z]/gi, '');
+// console.log(onlyLetters); // "HelloHowareyou"
+// // Оставить только цифры
+// let onlyDigits = text.replace(/[^0-9]/g, '');
+// console.log(onlyDigits); // "123"
+// // Оставить буквы и цифры
+// let lettersAndDigits = text.replace(/[^a-z0-9]/gi, '');
+// console.log(lettersAndDigits); // "HelloHowareyou123"
+// // Оставить буквы, цифры и пробелы
+// let lettersDigitsSpaces = text.replace(/[^a-z0-9\s]/gi, '');
+// console.log(lettersDigitsSpaces); // "Hello How are you 123"
+// // Оставить русские буквы
+// let russianText = "Привет, world! 123";
+// let onlyRussian = russianText.replace(/[^а-яё]/gi, '');
+// console.log(onlyRussian); // "Привет"
+
+
+
+
+
+
+// //упражнение 17
+// function amountOfPages(summary){
+//     let res = 0,
+//         index = 0,
+//         str = '';
+//     for (let i = 0; i < summary; i++) {
+//         index++;
+//         str += index;
+//         if (str.length > summary) {
+//             break
+//         } else {
+//             res = index;
+//         }
+//     }
+//     return res
+// }
+// console.log(amountOfPages(25));
+
+
+//bigint
+// const bigint = 11111111111111111111111111111111111111111111111111n;  //создание bigint +n
+
+
 //set убирание повторений 
 
 // const arr = [1, 1, 5, 2, 3, 1, "5"];
