@@ -1,3 +1,20 @@
+// //упражнение 19 с рекурсией
+// function deepCount(a){
+//     let res = 0;
+//     function mass(index) { 
+//         if (Array.isArray(index)) {
+//             res += index.length;
+//             index.forEach(item => {
+//                 mass(item)
+//             })
+//         }
+//     }
+//     mass(a);
+//     return res
+// }
+// console.log(deepCount([1, 2, [3, 4, [5]]]))
+
+
 // // //упражнение 18 и как убирать определенные символы 
 // function isPangram(string) {
 //     let lower = string.toLowerCase(),
