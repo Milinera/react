@@ -1,3 +1,15 @@
+//set убирание повторений 
+
+// const arr = [1, 1, 5, 2, 3, 1, "5"];
+
+// const set = new Set(arr);
+
+// set.add('s');
+// // delete, .has, .clear, .size
+// console.log(set);
+// Array.from(set); //получение массива обратно
+
+
 // //map - карты
 // shops = [
 //     {one: 1},
@@ -16,7 +28,7 @@
 // // console.log(map.has(shops[1]));   //проверка наличия true/false
 // // map.delete(key);
 // // map.clear();
-// // map.size();
+// // map.size;
 // // map.keys();
 
 
