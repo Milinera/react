@@ -1,23 +1,19 @@
 //data
 // const now = new Date(2026, 0, 17, 20);   //указание даны
 // const now = new Date(0);  //1970 год
-const now = new Date();
+// const now = new Date();
 // console.log(now.getFullYear());   //год
 // console.log(now.getDate());
 // console.log(now.getMonth());
 // console.log(now.getTime());  //в миллисекундах с 1970
-console.log(now.setHours(5, 30));
-console.log(now);
-
-let start = new Date();
-
-for (let i =0; i < 1000000; i++) {
-    let sum = i** 3;
-}
-
-let end = new Date();
-
-alert(`${end - start}`)
+// console.log(now.setHours(5, 30));
+// console.log(now);
+// let start = new Date();
+// for (let i =0; i < 1000000; i++) {
+//     let sum = i** 3;
+// }
+// let end = new Date();
+// alert(`${end - start}`)
 
 
 
