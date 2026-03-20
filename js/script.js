@@ -1,6 +1,17 @@
 'use strict';
 
 
+//rest оператор
+// const lock = function(a, b, ...x) {
+//     console.log(a, b, ...x);
+// }
+// function calc(number, basis = 3) {
+//     // basis = basis || 2; //замена параметра по умолчанию
+//     console.log(number* basis)
+// }
+// lock(1,2,3,4,5,6,1,3,5,1);
+// calc(1)
+
 //class
 // class Hz {
 //     constructor (height, width) {
