@@ -1,3 +1,82 @@
+'use strict';
+
+
+//class
+// class Hz {
+//     constructor (height, width) {
+//         this.height = height;
+//         this.width = width;
+//     }
+
+//     calcArea() {
+//         return this.height * this.width;
+//     }
+// }
+// const squere = new Hz(100,100);
+// const squere2 = new Hz(200,100);
+// console.log(squere.calcArea());
+// console.log(squere2.calcArea());
+
+
+// class Hz2 extends Hz {  //новый класс на основе главного с теми же методами 
+//     constructor (height, width, text, bgColor) {
+//         super(height, width);  //вызывает конструктор родителя
+//         this.text = text;
+//         this.bgColor = bgColor;
+//     }
+
+//     showInfo() {
+//         console.log(`текст: ${this.text}, ${this.bgColor}`)
+//     }
+// }
+// const div = new Hz2(100, 200, 'test', '#fff');
+// div.showInfo()
+
+
+//this   обычная функция this - window, елси strict то undefined
+// function show() {
+//     console.log(this);
+// }
+// show(); 
+// const obj = {
+//     a: 10,
+//     b: 12,
+//     sum: function() {
+//         console.log(this);
+//     }
+// }
+// obj.sum();  //контекст obj и его значения
+// const box = document.querySelector('.box');
+// const width = box.clientWidth;
+// const width2 = box.offsetWidth;
+// console.log(width);
+// console.log(width2);
+// function say(last) {
+//     console.log(this);
+//     console.log(this.name + last);
+// };
+// const user = {
+//     name: 'fff'
+// };
+// say.call(user, 'ddd');  // привязка функциии к контексту user 
+// say.apply(user, ['adada']);
+// function count(num) {
+//     return this*num;
+// }
+// const doudle = count.bind(2); //создание новой функции с контекстом 
+// console.log(doudle(12))
+
+// const btn = document.querySelector('button');
+// btn.addEventListener('click', function(){
+//     console.log(this);
+//     this.style.background = 'red'
+// })
+
+
+
+
+
+
 //data
 // const now = new Date(2026, 0, 17, 20);   //указание даны
 // const now = new Date(0);  //1970 год
