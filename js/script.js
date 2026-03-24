@@ -1,4 +1,15 @@
 'use strict';
+//глубокое копирование с помощью json
+// const person = {
+//     name: 'alex',
+//     let: '+222',
+//     petents: {
+//         name: 'all',
+//         let: 'ddd',
+        
+//     }
+// };
+// const clone = JSON.parse(JSON.stringify(person));
 
 
 //rest оператор
