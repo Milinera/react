@@ -1,4 +1,26 @@
 'use strict';
+
+// Упражнение 21
+// const funds = [
+//     {amount: -1400},
+//     {amount: 2400},
+//     {amount: -1000},
+//     {amount: 500},
+//     {amount: 10400},
+//     {amount: -11400}
+// ];
+
+// const getPositiveIncomeAmount = (data) => {
+//     return data.filter((item) => item.amount > 0).reduce((container, item) => container + item.amount, 0)
+// };
+// const getTotalIncomeAmount = (data) => {
+//     if (data.some(data => data.amount < 0)) {
+//         return data.reduce((container, item) => container + item.amount, 0)
+//     } else {
+//         getPositiveIncomeAmount(data)
+//     }
+// };
+
 // Упражнение 20
 // const films = [
 //     {
