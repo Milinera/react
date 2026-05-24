@@ -67,6 +67,295 @@
 // }
 
 
+
+
+//reduce, map , filter, every, some 
+// const somet = [1,2,3,4,5];
+// console.log(somet.every(item => item > 0))
+
+
+// const somet2 = [1,2,3,4,5];
+// console.log(somet2.some(item => item > 5))
+
+// const [first, ...d] = ['red', 'green', 'blue', 'yellow'];
+// console.log(first); // 'red'
+// console.log(d);  // ['green', 'blue', 'yellow']
+
+// const user = {
+//     name: 'ddd0'
+// }
+// const { name = 'Russia' } = user;
+// console.log(name);
+
+// const orders = [
+//     { id: 1, customer: "Alice", amount: 150, status: "delivered", category: "electronics" },
+//     { id: 2, customer: "Bob", amount: 80, status: "pending", category: "books" },
+//     { id: 3, customer: "Alice", amount: 200, status: "delivered", category: "clothing" },
+//     { id: 4, customer: "Charlie", amount: 50, status: "cancelled", category: "books" },
+//     { id: 5, customer: "Bob", amount: 300, status: "delivered", category: "electronics" },
+//     { id: 6, customer: "Alice", amount: 90, status: "pending", category: "books" },
+//     { id: 7, customer: "Charlie", amount: 120, status: "delivered", category: "clothing" },
+//     { id: 8, customer: "David", amount: 450, status: "delivered", category: "electronics" }
+// ];
+
+// function onlyDiliveredMore100(shop) {
+//     return orders.filter((item) => {
+//         if (item.status === "delivered" && item.amount > 100) {
+//             return item
+//         }
+//     })
+// }
+// console.log(onlyDiliveredMore100(orders))
+
+// function transformForString(shop) {
+//     return shop.map((item) => {
+//         return `Клиент ${item.customer} купил ${item.category} на ${item.amount} руб.,`
+//     })
+// }
+// console.log(transformForString(onlyDiliveredMore100(orders)))
+
+// function allAmount(shop) {
+//     return shop.reduce((container, item) => {
+//         return container + item.amount
+//     }, 0)
+// }
+// console.log(allAmount(orders))
+
+// function groupClientAmmout(shop) {
+//     return shop.reduce((container, item) => {
+//         if (!container[item.customer]) {
+//             container[item.customer] = 0;
+//         }
+//         container[item.customer] += item.amount;
+//         return container
+//     }, {})
+// }
+// console.log(groupClientAmmout(orders))
+
+// function moreValueCategory(shop) {
+//     return shop.filter(item => item.status === "delivered").reduce((container, item) => {
+//         if (!container[item.category]) {
+//             container[item.category] = 0
+//         }
+//         container[item.category] += item.amount
+//         return container
+//     }, {})
+// }
+// console.log(moreValueCategory(orders))
+
+// function moreValueCategory2(shop) {
+//     let newshop = Object.entries(shop);
+//     return newshop.reduce((container, item) => {
+//         if (item[1] > container[1]) {
+//             return item
+//         }
+//         return container
+//     })
+// }
+// console.log(moreValueCategory2(moreValueCategory(orders)))
+
+// const test = time => {
+//     return new Promise(resolve => {
+//         setTimeout(() => {
+//             resolve()
+//         }, time)
+//     })
+// }
+
+// test(1000).then(() => console.log(1000))
+// test(2000).then(() => console.log(2000))
+// test(3000).then(() => console.log(3000))
+
+
+// Promise.all([test(1000), test(2000)]).then(() => {
+//     console.log('all');
+// })
+
+// Promise.race([test(1000), test(2000)]).then(() => {
+//     console.log('first');
+// })
+
+// const req = new Promise(function(resolve, reject){
+//     console.log('загрузка 1');
+//     setTimeout(() => {
+//         console.log('загрузка 2');
+
+//         const data1 = {
+//             item: 1
+//         }
+//         resolve(data1);
+//     }, 2000)
+
+// })
+// req.then((data) => {
+//     const req2 = new Promise((resolve, reject) => {
+//         console.log(data);
+//         resolve(data);
+//     });
+
+//     req2.then(da => {
+//         da.mod = true;
+//         return da;
+//         console.log(da)
+//     }).then
+// })
+
+// const numbers = [2, 3, 4, 5];
+// const sum = numbers.reduce((container, item) => {
+//     return container * item
+// })
+// console.log(sum)
+
+// const text = "Hello world";
+// const res = text.split('').reduce((re, item) => {
+//     if (!re[item]) {
+//         re[item] = 0
+//     };
+//     re[item]++
+//     return re
+// }, {})
+// console.log(res)
+
+// const words = ["cat", "table", "elephant", "dog", "giraffe"];
+// function moreThe(mass) {
+//     return mass.filter(item => item.length > 3).reduce((res, item) => {
+//         return res += `,${item}`
+//     })
+// }
+// console.log(moreThe(words))
+
+// const strings = ["short", "medium length", "very long string here", "tiny"];
+// const longer = strings.reduce((res, item) => {
+//     if (item.length > res.length) {
+//         return item
+//     }
+//     return res
+// })
+// console.log(longer)
+
+
+// const nested = [[1, 2], [3, 4], [5, 6]];
+
+
+// const fruits = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+
+// // Считаем количество каждого фрукта
+// const count = fruits.reduce((acc, fruit) => {
+//     if (!acc[fruit]) {
+//         acc[fruit] = 0;
+//     }
+//     acc[fruit]++;
+//     return acc;
+// }, {});
+
+// console.log(count); // { apple: 3, banana: 2, orange: 1 }
+
+
+
+// const books = [
+//   { id: 1, title: "1984", author: "Orwell", year: 1949, genres: ["dystopian", "classic"], rating: 4.8 },
+//   { id: 2, title: "Brave New World", author: "Huxley", year: 1932, genres: ["dystopian", "sci-fi"], rating: 4.5 },
+//   { id: 3, title: "The Great Gatsby", author: "Fitzgerald", year: 1925, genres: ["classic", "romance"], rating: 4.2 },
+//   { id: 4, title: "Dune", author: "Herbert", year: 1965, genres: ["sci-fi", "adventure"], rating: 4.9 },
+//   { id: 5, title: "The Catcher in the Rye", author: "Salinger", year: 1951, genres: ["classic"], rating: 3.9 },
+//   { id: 6, title: "Foundation", author: "Asimov", year: 1951, genres: ["sci-fi"], rating: 4.7 }
+// ];
+
+
+// function filterMoreThen1950andRateMore45(shop) {
+//     return shop.filter((item) => {
+//         if (item.year > 1950 && item.rating > 4.5) {
+//             return true
+//         }
+//     })
+// }
+// console.log(filterMoreThen1950andRateMore45(books));
+
+// function filterNoClassic(shop) {
+//     return shop.filter((item) => {
+//         return !item.genres.some(genre => genre === "classic");
+//     })
+// }
+// console.log(filterNoClassic(books))
+
+// function mapCart(shop) {
+//     return shop.map((item) => {
+//         return `${item.title} (${item.year}) - ${item.rating}`
+//     })
+// }
+// console.log(mapCart(books))
+
+// function addAge(shop) {
+//     return shop.map((item) => {
+//         return {
+//             ...item,
+//             age: 2026 - item.year
+//         };
+//     })
+// }
+// console.log(addAge(books))
+
+// function sciMap(shop) {
+//     return shop.filter((item) => {
+//         if (item.rating > 4.6) {
+//             if (item.genres.includes("sci-fi")) {
+//                 return true
+//             }
+//         }
+//     }).map((item) => {
+//         return item.title
+//     })
+// }
+// console.log(sciMap(books))
+
+// function moreOneGeners(shop) {
+//     return shop.filter((item) => {
+//         if (item.genres.length > 1) {
+//             return true
+//         }
+//     }).map((item) => {
+//         return {
+//             title: item.title, rating: item.rating
+//         }
+//     })
+// }
+// console.log(moreOneGeners(books))
+
+// function searhMidd(shop) {
+//     let newMass = shop.filter(item => item.genres.includes('dystopian')).map(item => item.rating);
+//     let res = 0;
+//     newMass.forEach(element => {
+//         res += element
+//     });
+//      return res = res / newMass.length
+// }
+// console.log(searhMidd(books))
+
+// function groupBooksByGenre(shop) {
+//     return shop.reduce((acc, book) => {
+//         // acc = аккумулятор (наш объект с жанрами)
+//         // book = текущая книга
+        
+//         // Проходим по каждому жанру текущей книги
+//         book.genres.forEach(genre => {
+//             // Если жанра еще нет в аккумуляторе — создаем пустой массив
+//             if (!acc[genre]) {
+//                 acc[genre] = [];
+//             }
+//             // Добавляем название книги в массив этого жанра
+//             acc[genre].push(book.title);
+//         });
+        
+//         return acc; // обязательно возвращаем аккумулятор
+//     }, {}); // пустой объект — начальное значение
+// }
+
+// console.log(groupBooksByGenre(books));
+
+
+
+
+
 //ajax
 // const reques = new XMLHttpRequest();  //создание конекта к файлу
 // reques.open('GET', 'js/файл.json');   //создание настроек (метод, ссылка, синхронность, логин, пароль)
