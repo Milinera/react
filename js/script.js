@@ -1,22 +1,68 @@
 'use strict';
-//ajax
-const reques = new XMLHttpRequest();  //создание конекта к файлу
-reques.open('GET', 'js/файл.json');   //создание настроек (метод, ссылка, синхронность, логин, пароль)
-reques.setRequestHeader('Content-type', 'application/json; charset=utf-8');  //заголовок
-reques.send();  //прием
+// Упражнение 20
+// const films = [
+//     {
+//         name: 'Titanic',
+//         rating: 9
+//     },
+//     {
+//         name: 'Die hard 5',
+//         rating: 5
+//     },
+//     {
+//         name: 'Matrix',
+//         rating: 8
+//     },
+//     {
+//         name: 'Some bad film',
+//         rating: 4
+//     }
+// ];
+// function showGoodFilms(arr) {
+//     return arr.filter(item => item.rating >= 8)
+// }
+// function showListOfFilms(arr) {
+//     return arr.reduce((container, item) => {
+//         if (container.length === 0) {
+//             return item.name
+//         }
+//         return container += `, ${item.name}`
+//     }, '')
+// }
+// function setFilmsIds(arr) {
+//     return arr.map((item, index) => {
+//         item.id = index
+//         return item
+//     })
+// }
+// const tranformedArray = setFilmsIds(films);
+// function checkFilms(arr) {
+//     return arr.every((item => {
+//         if (item.id || item.id === 0) {
+//             return true
+//         } 
+//     }))
+// }
 
-reques.addEventListener('readystatechange', () =>{   //контроль за движение запроса
-    if (reques.readyState === 4 && reques.status === 200) {
-        console.log(reques.response);   //вывод ответа в консоль
-        const data = JSON.parse(reques.response);
-    }
-})
-reques.addEventListener('load', () =>{   //запрос готов
-    if (reques.status === 200) {
-        console.log(reques.response);   //вывод ответа в консоль
-        const data = JSON.parse(reques.response);
-    }
-})
+
+//ajax
+// const reques = new XMLHttpRequest();  //создание конекта к файлу
+// reques.open('GET', 'js/файл.json');   //создание настроек (метод, ссылка, синхронность, логин, пароль)
+// reques.setRequestHeader('Content-type', 'application/json; charset=utf-8');  //заголовок
+// reques.send();  //прием
+
+// reques.addEventListener('readystatechange', () =>{   //контроль за движение запроса
+//     if (reques.readyState === 4 && reques.status === 200) {
+//         console.log(reques.response);   //вывод ответа в консоль
+//         const data = JSON.parse(reques.response);
+//     }
+// })
+// reques.addEventListener('load', () =>{   //запрос готов
+//     if (reques.status === 200) {
+//         console.log(reques.response);   //вывод ответа в консоль
+//         const data = JSON.parse(reques.response);
+//     }
+// })
 
 
 
