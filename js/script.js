@@ -1,4 +1,30 @@
 'use strict';
+//регулярные выражения 
+// str.match(re)        // массив совпадений или null
+// str.matchAll(re)     // итератор со всеми деталями
+// str.search(re)       // индекс первого совпадения
+// str.replace(re, '')  // замена
+// str.split(re)        // разделить по регулярке
+// re.test(str)    // true/false
+// re.exec(str)    // следующее совпадение (детально)
+// function hasDigit(str) {
+//     return /\d/.test(str);
+// }
+// console.log(hasDigit("hello123")); // true
+// console.log(hasDigit("hello"));    // false
+
+// function countVowels(str) {
+//     const matches = str.match(/[aeiou]/gi);
+//     console.log(matches)
+//     return matches ? matches.length : 0;
+// }
+
+// // Проверка:
+// console.log(countVowels("Hello World")); // 3 (e, o, o)
+// console.log(countVowels("JavaScript"));  // 3 (a, a, i)
+// console.log(countVowels("Rhythm"));      // 0 (нет гласных)
+// console.log(countVowels("AEIOU"));       // 5 (все гласные)
+
 
 // Упражнение 21
 // const funds = [
