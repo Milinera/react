@@ -1,4 +1,33 @@
 'use strict';
+
+//аксеторы и инкапсуляция
+// const person = {
+//     name: 'alex',
+//     age: 10,
+
+//     get userAge() {
+//         return this.age;
+//     },
+
+//     set userAge(num) {
+//         this.age = num;
+//     }
+// }
+
+// console.log(person.userAge = 30);
+// console.log(person.userAge);
+
+function user(name,age) {
+    this.name = name;
+    this.age = age;
+
+    this.say = function() {
+        console.log(`имя ${this.name} возраст ${this.age}`)
+    }
+}
+const ivan = new User('ivan', 27);
+console.log(ivan.name);
+console.log(ivan.age);
 //регулярные выражения 
 // str.match(re)        // массив совпадений или null
 // str.matchAll(re)     // итератор со всеми деталями
