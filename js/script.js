@@ -1,59 +1,27 @@
 'use strict';
 
-//аксеторы и инкапсуляция
-// const person = {
-//     name: 'alex',
-//     age: 10,
 
-//     get userAge() {
-//         return this.age;
-//     },
-
-//     set userAge(num) {
-//         this.age = num;
+//инкапсуляция
+// class User {
+//     constructor(name, age) {
+//         this.name = name;
+//         this._age = age;
+//     }
+//     say() {
+//         console.log(`имя ${this.name} возраст ${this._age}`)
+//     }
+//     get age() {
+//         return this._age;
+//     }
+//     set age(age) {
+//         this._age  = age * 2;
 //     }
 // }
-
-// console.log(person.userAge = 30);
-// console.log(person.userAge);
-
-function user(name,age) {
-    this.name = name;
-    this.age = age;
-
-    this.say = function() {
-        console.log(`имя ${this.name} возраст ${this.age}`)
-    }
-}
-const ivan = new User('ivan', 27);
-console.log(ivan.name);
-console.log(ivan.age);
-//регулярные выражения 
-// str.match(re)        // массив совпадений или null
-// str.matchAll(re)     // итератор со всеми деталями
-// str.search(re)       // индекс первого совпадения
-// str.replace(re, '')  // замена
-// str.split(re)        // разделить по регулярке
-// re.test(str)    // true/false
-// re.exec(str)    // следующее совпадение (детально)
-// function hasDigit(str) {
-//     return /\d/.test(str);
-// }
-// console.log(hasDigit("hello123")); // true
-// console.log(hasDigit("hello"));    // false
-
-// function countVowels(str) {
-//     const matches = str.match(/[aeiou]/gi);
-//     console.log(matches)
-//     return matches ? matches.length : 0;
-// }
-
-// // Проверка:
-// console.log(countVowels("Hello World")); // 3 (e, o, o)
-// console.log(countVowels("JavaScript"));  // 3 (a, a, i)
-// console.log(countVowels("Rhythm"));      // 0 (нет гласных)
-// console.log(countVowels("AEIOU"));       // 5 (все гласные)
-
+// const ivan = new User('ivan', 27);
+// console.log(ivan.age);
+// ivan.age = 35;
+// console.log(ivan.age);
+// ivan.say();
 
 // Упражнение 21
 // const funds = [
