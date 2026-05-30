@@ -1,5 +1,21 @@
 'use strict';
 
+//модули
+// let number = 4;
+// (function(){ //функция с самовызовом
+//     let number = 2;
+//     console.log(number)
+// }());
+// const user = (function() {
+//     const privat = function() {
+//         console.log('aaa')
+//     }
+//     return {
+//         sayhel: privat
+//     }
+// }())
+// user.sayhel()
+
 
 //инкапсуляция
 // class User {
