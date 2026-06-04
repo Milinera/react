@@ -1,5 +1,29 @@
 'use strict';
+//упражнение 22
+// const multiply20 = (price) => price * 20;
+// const divide100 = (price) => price / 100;
+// const normalizePrice = (price) => price.toFixed(2);
+// function compose(...fns) {
+//     return function(x) {
+//         return fns.reduceRight((res, fn) => {
+//             return fn(res);
+//         }, x);
+//     };
+// }
+// const res = compose(multiply20, divide100, normalizePrice);
+// console.log(res(11470)); // 2
 
+
+// const add1 = function(a){return a + 1}
+// const addAll3 = function(a,b,c){return a + b + c}
+// function composeWithArgs(...fns) {
+//     return fns.reduceRight((f, g) => {
+//         return function(...args) {
+//             return g(f(...args));
+//         };
+//     });
+// }
+// console.log(composeWithArgs(add1,addAll3)(1,3,3))
 
 //js анимации\
 // waapiBall.animate(
