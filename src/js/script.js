@@ -1,20 +1,57 @@
 'use strict';
+
+
+//js анимации\
+// waapiBall.animate(
+//     [
+//         { left: '0px' },           // начало
+//         { left: `${moveDistance}px` }, // середина
+//         { left: '0px' }             // конец (возврат)
+//     ],
+//     {
+//         duration: 2000,      // 2 секунды на один цикл
+//         iterations: Infinity, // бесконечно
+//         direction: 'normal',  // только туда-обратно
+//         easing: 'ease-in-out' // плавное движение
+//     }
+// );
+
+//функции генераторы
+// function* gere() {
+//     yield 's';
+//     yield 'c';
+//     yield '1';
+//     yield 'd';
+//     yield 'i';
+// }
+// const srt = gere();
+// console.log(srt.next().value);
+// function* count(n) {
+//     for (let i = 0; i < n; i++) {
+//         yield i;
+//     }
+// }
+// const counter = count(2);
+// for ( let k of count(7)) {
+//     console.log(k)
+// }
+
+
 //try\catch
+// try {
+//     console.log(xx)
+//     console.log('normal')
+// } catch(e) {
+//     console.log(e.name);
+//     console.log(e.massage);
+// } finally {
+//     console.log('ever')
 
-try {
-    console.log(xx)
-    console.log('normal')
-} catch(e) {
-    console.log(e.name);
-    console.log(e.massage);
-} finally {
-    console.log('ever')
+// }
+// console.log('last')
 
-}
-console.log('last')
-
-const err = new Error('dddd');
-console.log(err.message)
+// const err = new Error('dddd');
+// console.log(err.message)
 
 //модули
 // let number = 4;
