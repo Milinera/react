@@ -14,16 +14,17 @@
 // console.log(res(11470)); // 2
 
 
-// const add1 = function(a){return a + 1}
-// const addAll3 = function(a,b,c){return a + b + c}
-// function composeWithArgs(...fns) {
-//     return fns.reduceRight((f, g) => {
-//         return function(...args) {
-//             return g(f(...args));
-//         };
-//     });
-// }
-// console.log(composeWithArgs(add1,addAll3)(1,3,3))
+const add4 = function(a){return a*3}
+const add1 = function(a){return a + 1}
+const addAll3 = function(a,b,c){return a + b + c}
+function composeWithArgs(...fns) {
+    return fns.reduceRight((f, g) => {
+        return function(...args) {
+            return g(f(...args));
+        };
+    });
+}
+console.log(composeWithArgs(add1,add4,addAll3)(1,3,3))
 
 //js анимации\
 // waapiBall.animate(
