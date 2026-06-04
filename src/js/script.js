@@ -1,4 +1,20 @@
 'use strict';
+//try\catch
+
+try {
+    console.log(xx)
+    console.log('normal')
+} catch(e) {
+    console.log(e.name);
+    console.log(e.massage);
+} finally {
+    console.log('ever')
+
+}
+console.log('last')
+
+const err = new Error('dddd');
+console.log(err.message)
 
 //модули
 // let number = 4;
