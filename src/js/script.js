@@ -1,6 +1,7 @@
 'use strict';
 
 //event-loop
+// queueMicrotask(() => console.log('выполение микрозадачи'));
 // const h2 = document.querySelector('.h2');
 // h2.addEventListener('click', () => {
 //     setTimeout(() => {
