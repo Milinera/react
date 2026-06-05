@@ -1,4 +1,21 @@
 'use strict';
+
+//event-loop
+// const h2 = document.querySelector('.h2');
+// h2.addEventListener('click', () => {
+//     setTimeout(() => {
+//         console.log(1)
+//     }, 3000)
+// })
+// console.log(1);
+// setTimeout(() => {
+//     console.log('таймаут');
+// }, 4000);
+// setTimeout(() => {
+//     console.log('таймаут2');
+// }, 4000);
+// console.log(2);
+
 //упражнение 22
 // const multiply20 = (price) => price * 20;
 // const divide100 = (price) => price / 100;
@@ -12,19 +29,18 @@
 // }
 // const res = compose(multiply20, divide100, normalizePrice);
 // console.log(res(11470)); // 2
+// const add4 = function(a){return a*3}
+// const add1 = function(a){return a + 1}
+// const addAll3 = function(a,b,c){return a + b + c}
+// function composeWithArgs(...fns) {
+//     return fns.reduceRight((f, g) => {
+//         return function(...args) {
+//             return g(f(...args));
+//         };
+//     });
+// }
+// console.log(composeWithArgs(add1,add4,addAll3)(1,3,3))
 
-
-const add4 = function(a){return a*3}
-const add1 = function(a){return a + 1}
-const addAll3 = function(a,b,c){return a + b + c}
-function composeWithArgs(...fns) {
-    return fns.reduceRight((f, g) => {
-        return function(...args) {
-            return g(f(...args));
-        };
-    });
-}
-console.log(composeWithArgs(add1,add4,addAll3)(1,3,3))
 
 //js анимации\
 // waapiBall.animate(
