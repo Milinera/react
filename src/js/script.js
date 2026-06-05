@@ -1,5 +1,97 @@
 'use strict';
 
+//практика с promise
+// function fetchUser(userId) {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve({ id: userId, name: 'Анна', email: 'anna@mail.com' });
+//     }, 500);
+//   });
+// }
+// function fetchPosts(userId) {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve([
+//         { id: 1, title: 'Пост 1', userId },
+//         { id: 2, title: 'Пост 2', userId }
+//       ]);
+//     }, 700);
+//   });
+// }
+// fetchUser(5)
+//   .then(user => {
+//     // ВЕРНЕМ промис из fetchPosts и ДОДЕЛАЕМ работу внутри
+//     return fetchPosts(user.id).then(posts => {
+//       user.posts = posts;
+//       return user;
+//     });
+//   })
+//   .then(user => {
+//     console.log(`${user.name} написала ${user.posts.length} поста`);
+//   })
+//   .catch(error => {
+//     console.log('Ошибка загрузки');
+//   });
+
+// function fetchUser(userId) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (userId === 999) {
+//         reject('Пользователь не найден');
+//       } else {
+//         resolve({ id: userId, name: 'Анна', age: 25, friendsIds: [2, 3] });
+//       }
+//     }, 300);
+//   });
+// }
+// function fetchProfilePhoto(userId) {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve(`https://example.com/photos/${userId}.jpg`);
+//     }, 200);
+//   });
+// }
+// function fetchUserFriends(friendsIds) {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       const friends = friendsIds.map(id => ({ id, name: `Друг ${id}` }));
+//       resolve(friends);
+//     }, 400);
+//   });
+// }
+// fetchUser(5)
+// .then(userId => {
+//     let user = {};
+//     user.user = userId;
+//     return user
+// })
+// .then(user => {
+//     return fetchProfilePhoto(user.user.id)
+//     .then(photo => {
+//         user.photoUrl = photo;
+//         return user
+//     })
+// })
+// .then(user => {
+//     return fetchUserFriends(user.user.friendsIds).then(friends => {
+//         user.friends = friends;
+//         return user
+//     })
+// })
+// .then(user => {
+//     user.summary = `${user.user.name}, ${user.user.age} лет, друзей: ${user.friends.length}`;
+//     console.log(user);
+// })
+
+
+// {
+//   user: { id: 1, name: 'Анна', age: 25 },
+//   photoUrl: 'https://example.com/photos/1.jpg',
+//   friends: [{ id: 2, name: 'Друг 2' }, { id: 3, name: 'Друг 3' }],
+//   summary: 'Анна, 25 лет, друзей: 2'
+// }
+
+
 //event-loop
 // queueMicrotask(() => console.log('выполение микрозадачи'));
 // const h2 = document.querySelector('.h2');
